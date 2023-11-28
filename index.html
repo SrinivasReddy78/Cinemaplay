@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinemaplay : Watch Free Movies and Tvshows</title>
+    <link rel="stylesheet" href="movies-responsive.css">
+    <link rel="stylesheet" href="cinemaplay-website.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <h1>Cinemaplay</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Category</a>
+                    <div class="dropdown-content">
+                        <a href="#">Movies</a>
+                        <a href="#">TV Shows</a>
+                        <a href="#">Newly Added</a>
+                        <a href="#">Anime</a>
+                    </div>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+            <div class="right">
+                <input type="text" placeholder="Search here">
+                <button class="nav-btn" id="login-btn">Login</button>
+                <button class="nav-btn" id="signup-btn">Signup</button>
+            </div>
+        </nav>
+        <form action="">
+            <div class="popup" id="login-popup">
+                <div class="popup-close">&times;</div>
+                <h1>LOGIN</h1>
+                <div class="popup-elements">
+                    <label for="username">username</label>
+                    <input type="text" placeholder="Enter your username" name="login-username">
+                </div>
+                <div class="popup-elements">
+                    <label for="password">password</label>
+                    <input type="password" placeholder="Enter your password" name="login-password">
+                </div>
+                <div class="popup-elements">
+                    <input type="checkbox" name="checkbox">
+                    <label for="checkbox">Remember Me</label>
+                </div>
+                <div class="popup-elements">
+                    <button class="popup-btn">Sign In</button>
+                </div>
+            </div>
+        </form>
+        <form action="">
+            <div class="popup1" id="signup-popup">
+                <div class="popup-close1">&times;</div>
+                <h1>SIGNIN</h1>
+                <div class="popup-elements">
+                    <label for="username">username</label>
+                    <input type="text" placeholder="Enter your username" name="signup-username">
+                </div>
+                <div class="popup-elements">
+                    <label for="password">password</label>
+                    <input type="password" placeholder="Enter your password" name="signup-password">
+                </div>
+                <div class="popup-elements">
+                    <label for="password">Confirm</label>
+                    <input type="password" placeholder="Confirm your password" name="signup-confirm">
+                </div>
+                <div class="popup-elements">
+                    <button class="popup-btn">Sign up</button>
+                </div>
+            </div>
+        </form>
+    </header>
+
+    <!-- carousel code  -->
+
+    <div class="container">
+        <div class="items" id="items1">
+            <img src="/cinemaplay-images/the creator.avif" alt="" width="1520" height="600">
+        </div>
+        <div class="items">
+            <img src="/cinemaplay-images/the nun-lanscape.jpg" alt="" width="1520"
+                height="600">
+        </div>
+        <div class="items">
+            <img src="/cinemaplay-images/loki-landscape.webp"
+                alt="" width="1520" height="600">
+        </div>
+        <div class="items">
+            <img src="/cinemaplay-images/gen v-landscape.avif"
+                alt="" width="1520" height="600">
+        </div>
+        <div class="items">
+            <img src="/cinemaplay-images/saw x landscape.webp" alt="" width="1520" height="600">
+        </div>
+    </div>
+    <div class="arrows">
+        <span class="prev" onclick="changeSlide(-1)"><</span>
+        <span class="next" onclick="changeSlide(1)">></span>
+    </div>
+   
+    <!-- trending row -->
+
+    <div class="label">Trending</div>
+    <div class="trending">
+        <div class="cards">
+            <img src="/cinemaplay-images/the creator-straight.jpg" alt="The creator" width="291" height="350">
+            <div class="title">The creator</div>
+            <div class="tag">1</div>
+        </div>
+        <div class="cards">
+            <img src="/cinemaplay-images/the nun.jpg" alt="The Nun 2"  width="291" height="350">
+            <div class="title">The Nun 2</div>
+            <div class="tag">2</div>
+        </div>
+        <div class="cards">
+            <img src="/cinemaplay-images/old dads.jpg" alt="Old Dads"  width="291" height="350">
+            <div class="title">Old Dads</div>
+            <div class="tag">3</div>
+        </div>
+        <div class="cards">
+            <img src="/cinemaplay-images/turtles mutant ninja.jpg" alt="Teenage mutant ninja Turtles : mutant mayhem"  width="291" height="350">
+            <div class="title">Teenage mutant ninja Turtles : mutant mayhem</div>
+            <div class="tag">4</div>
+        </div>
+        <div class="cards">
+            <img src="/cinemaplay-images/killers of the flower moon.webp"
+                alt="Killers of the flower moon"  width="291" height="350">
+            <div class="title">Killers of the flower moon</div>
+            <div class="tag">5</div>
+        </div>
+        <div class="cards">
+            <img src="/cinemaplay-images/talk to me.webp" alt="Talk to Me"  width="291" height="350">
+            <div class="title">Talk to Me</div>
+            <div class="tag">6</div>
+        </div>
+        <div class="cards">
+            <img src="/cinemaplay-images/the burial.jpg" alt="The Burial"  width="291" height="350">
+            <div class="title">The Burial</div>
+            <div class="tag">7</div>
+        </div>
+        <div class="cards">
+            <img src="/cinemaplay-images/saw x.jpg" alt="Saw X"  width="291" height="350">
+            <div class="title">Saw X</div>
+            <div class="tag">8</div>
+        </div>
+        <div class="cards">
+            <img src="/cinemaplay-images/fair play.jpg" alt="Fair Play"  width="291" height="350">
+            <div class="title">Fair Play</div>
+            <div class="tag">9</div>
+        </div>
+        <div class="cards">
+            <img src="/cinemaplay-images/totally killer.jpg" alt="Totally Killer"  width="291" height="350">
+            <div class="title">Totally Killer</div>
+            <div class="tag">10</div>
+        </div>
+        <div class="controls">
+            <span class="prev" onclick="action(-1)"><</span>
+            <span class="next" onclick="action(1)">></span>
+        </div>
+    </div>
+
+<!-- genreButtons-based-filter -->
+
+<div class="label">GENERS</div>
+<div class="geners-box">
+    <div class="geners-btn-row">
+        <button class="btns" data-genre="all">All</button>
+        <button class="btns" data-genre="Action">Action</button>
+        <button class="btns" data-genre="Sci-fi">Sci-fi</button>
+        <button class="btns" data-genre="Fantasy">Fantasy</button>
+        <button class="btns" data-genre="Horror">Horror</button>
+        <button class="btns" data-genre="Mystery">Mystery</button>
+        <button class="btns" data-genre="Thriller">Thriller</button>
+        <button class="btns" data-genre="Comedy">Comedy</button>
+        <button class="btns" data-genre="Romance">Romance</button>
+        <button class="btns" data-genre="Marvel">Marvel</button>
+        <button class="btns" data-genre="Dc">Dc</button>
+        <button class="btns" data-genre="Drama">Drama</button>
+        <button class="btns" data-genre="Adventure">Adventure</button>
+        <button class="btns" data-genre="Animated">Animated</button>
+        <button class="btns" data-genre="Zombie">Zombie</button>
+    </div>
+    <div class="geners-sort-display">
+        <div class="gener-card">
+            <img src="/cinemaplay-images/dune.jpeg" alt="">
+            <div class="title" data-genre="Sci-fi">Dune</div>
+        </div>
+        <div class="gener-card">
+            <img src="/cinemaplay-images/beauty and beast.jpg" alt="">
+            <div class="title" data-genre="Fantasy">Beauty and Beast</div>
+        </div>
+        <div class="gener-card">
+            <img src="/cinemaplay-images/jhon wick.jpg" alt="">
+            <div class="title" data-genre="Action">Johnwick 2</div>
+        </div>
+        <div class="gener-card">
+            <img src="/cinemaplay-images/the shinning.jpg" alt="">
+            <div class="title" data-genre="Thriller">The Shining</div>
+        </div>
+        <div class="gener-card">
+            <img src="/cinemaplay-images/scream vi.jpg" alt="">
+            <div class="title" data-genre="Horror">Scream VI</div>
+        </div>
+        <div class="gener-card">
+            <img src="/cinemaplay-images/the hangover.jpg" alt="">
+            <div class="title" data-genre="comedy">The Hangover</div>
+        </div>
+        <div class="gener-card">
+            <img src="/cinemaplay-images/thor love and thunder.jpg" alt="">
+            <div class="title" data-genre="Marvel">Thor</div>
+        </div>
+        <div class="gener-card">
+            <img src="/cinemaplay-images/venom 2.jpg" alt="">
+            <div class="title" data-genre="Dc">Venom 2</div>
+        </div>
+    </div>
+    <div class="geners-sort-display">
+        <div class="gener-card">
+            <img src="/cinemaplay-images/avatar.jpg" alt="">
+            <div class="title" data-genre="Fantasy">Avatar</div>
+        </div>
+        <div class="gener-card">
+            <img src="/cinemaplay-images/mad amx fury.jpg"
+                alt="">
+            <div class="title" data-genre="Action">MadMax Fury</div>
+        </div>
+        <div class="gener-card">
+            <img src="/cinemaplay-images/sicario.jpg"
+                alt="">
+            <div class="title" data-genre="Thriller">Sicario</div>
+        </div>
+        <div class="gener-card">
+            <img src="/cinemaplay-images/saw x 2.webp"
+                alt="">
+            <div class="title" data-genre="Horror">Saw X</div>
+        </div>
+        <div class="gener-card">
+            <img src="/cinemaplay-images/the spy next door.jpeg"
+                alt="">
+            <div class="title" data-genre="Comedy">The Spy Next Door</div>
+        </div>
+        <div class="gener-card">
+            <img src="/cinemaplay-images/doctor strange.png" alt="">
+            <div class="title" data-genre="Marvel">Doctor Strange:Multiverse of Madness</div>
+        </div>
+        <div class="gener-card">
+            <img src="/cinemaplay-images/the batman.jpg"
+                alt="">
+            <div class="title" data-genre="Dc">The Batman</div>
+        </div>
+        <div class="gener-card">
+            <img src="/cinemaplay-images/free guy.jpg"
+                alt="">
+            <div class="title" data-genre="Sci-fi">Free Guy</div>
+        </div>
+    </div>
+</div>
+
+<!-- movies-row -->
+
+<div class="label">Movies</div>
+<div class="movies-row">
+    <div class="cards">
+        <img src="/cinemaplay-images/the killer.jpg" alt="" width="291" height="350">
+        <div class="title">The Killer 2023</div>
+    </div>
+    <div class="cards">
+        <img src="/cinemaplay-images/jhon wick.jpg" alt=""  width="291" height="350">
+        <div class="title">John Wick</div>
+    </div>
+    <div class="cards">
+        <img src="/cinemaplay-images/killers of the flower moon.webp" alt=""  width="291" height="350">
+        <div class="title">Killers of the flower moon</div>
+    </div>
+    <div class="cards">
+        <img src="./cinemaplay-images/saw x.jpg" alt=""  width="291" height="350">
+        <div class="title">Saw X</div>
+    </div>
+    <div class="cards">
+        <img src="/cinemaplay-images/talk to me.webp"
+            alt=""  width="291" height="350">
+        <div class="title">Talk to Me</div>
+    </div>
+    <div class="cards">
+        <img src="/cinemaplay-images/oppenhiemer.jpg" alt=""  width="291" height="350">
+        <div class="title">Oppenheimer</div>
+        <div class="tag">6</div>
+    </div>
+    <div class="cards">
+        <img src="/cinemaplay-images/old dads.jpg" alt=""  width="291" height="350">
+        <div class="title">Old Dads</div>
+    </div>
+    <div class="cards">
+        <img src="/cinemaplay-images/sicario.jpg" alt=""  width="291" height="350">
+        <div class="title">Sicario</div>
+    </div>
+    <div class="cards">
+        <img src="/cinemaplay-images/the creator-straight.jpg" alt=""  width="291" height="350">
+        <div class="title">The Creator</div>
+    </div>
+    <div class="cards">
+        <img src="/cinemaplay-images/the nun.jpg" alt=""  width="291" height="350">
+        <div class="title">The Nun 2</div>
+    </div>
+    <div class="controls2">
+        <span class="prev" onclick="scrollCards2(-1)"><</span>
+        <span class="next" onclick="scrollCards2(1)">></span>
+    </div>
+</div>
+
+<!-- tvshows and anime rows -->
+
+<div class="label">Tv Shows</div>
+<div class="row" id="tvShowRow">
+    <div class="cards">
+        <img src="/cinemaplay-images/The Breaking Bad.webp" alt="Breaking Bad" width="291" height="350">
+        <div class="title">Breaking Bad</div>
+    </div>
+    <div class="cards">
+        <img src="/cinemaplay-images/Game of Thrones.jpg" alt="Game of Thrones"  width="291" height="350">
+        <div class="title">Game of Thrones</div>
+    </div>
+    <div class="cards">
+        <img src="/cinemaplay-images/Dark.jpg" alt="Dark"  width="291" height="350">
+        <div class="title">Dark</div>
+    </div>
+    <div class="cards">
+        <img src="/cinemaplay-images/Stranger Things.jpg" alt="Stranger Things"  width="291" height="350">
+        <div class="title">Stranger Things</div>
+    </div>
+    <div class="cards">
+        <img src="/cinemaplay-images/Loki.jpg"
+            alt="Loki"  width="291" height="350">
+        <div class="title">Loki</div>
+    </div>
+    <div class="cards">
+        <img src="/cinemaplay-images/Peaky Blinders.jpg" alt="Peaky Blinders"  width="291" height="350">
+        <div class="title">Peaky Blinders</div>
+    </div>
+    <div class="cards">
+        <img src="/cinemaplay-images/Friends.jpg" alt="Friends"  width="291" height="350">
+        <div class="title">Friends</div>
+    </div>
+    <div class="cards">
+        <img src="/cinemaplay-images/Narcos Mexico 2" alt="Narcos Mexico"  width="291" height="350">
+        <div class="title">Narcos Mexico</div>
+    </div>
+    <div class="cards">
+        <img src="/cinemaplay-images/Daredevil.jpg" alt="Daredevil"  width="291" height="350">
+        <div class="title">Daredevil</div>
+    </div>
+    <div class="cards">
+        <img src="/cinemaplay-images/Tribes of Europa.jpg" alt="Tribes of Europa"  width="291" height="350">
+        <div class="title">Tribes of Europa</div>
+    </div>
+    <div class="controls">
+        <span class="prev" onclick="scrollCards(-1)"><</span>
+        <span class="next" onclick="scrollCards(1)">></span>
+    </div>
+</div>
+<div class="label">Anime</div>
+<div class="row" id="animeRow">
+    <div class="cards">
+        <img src="/cinemaplay-images/one piece.jpg" alt="One piece" width="291" height="350">
+        <div class="title">One piece</div>
+    </div>
+    <div class="cards">
+        <img src="/cinemaplay-images/death note.jpg" alt="Death Note"  width="291" height="350">
+        <div class="title">Death Note</div>
+    </div>
+    <div class="cards">
+        <img src="/cinemaplay-images/Attack on titan.jpg" alt="Attack on Titan"  width="291" height="350">
+        <div class="title">Attack on Titan</div>
+    </div>
+    <div class="cards">
+        <img src="/cinemaplay-images/Jujutsu kaisen.jpg" alt="Jujutsu Kaisen"  width="291" height="350">
+        <div class="title">Jujutsu Kaisen</div>
+    </div>
+    <div class="cards">
+        <img src="/cinemaplay-images/tokyo Revengers.jpg"
+            alt="Tokyo Revengers"  width="291" height="350">
+        <div class="title">Tokyo Revengers</div>
+    </div>
+    <div class="cards">
+        <img src="/cinemaplay-images/Naruto.jpg" alt="Naruto"  width="291" height="350">
+        <div class="title">Naruto</div>
+    </div>
+    <div class="cards">
+        <img src="/cinemaplay-images/Dragon ball Z.jpg" alt="Dragon Ball Z"  width="291" height="350">
+        <div class="title">Dragon Ball Z</div>
+    </div>
+    <div class="cards">
+        <img src="/cinemaplay-images/Bleach.jpg" alt="Demon slayer"  width="291" height="350">
+        <div class="title">Demon slayer</div>
+    </div>
+    <div class="cards">
+        <img src="/cinemaplay-images/Bleach.jpg" alt="Bleach"  width="291" height="350">
+        <div class="title">Bleach</div>
+    </div>
+    <div class="cards">
+        <img src="/cinemaplay-images/Chainsawman.webp" alt="Chainsaw Man"  width="291" height="350">
+        <div class="title">Chainsaw Man</div>
+    </div>
+    <div class="controls1 controls">
+        <span class="prev" onclick="scrollCards1(-1)"><</span>
+        <span class="next" onclick="scrollCards1(1)">></span>
+    </div>
+</div>
+
+<!-- footer -->
+
+<footer>
+    <div class="footer-box">
+        <div class="footer-content">
+            <div class="logo">CINEMAPLAY</div>
+            <div class="about">
+                <h2>About Us</h2>
+                <p>Cinemaplay is free tv shows streaming website with zero ads, it allows you watch tv shows
+                    online,watch tv shows online free in high quality for free. </p>
+                <p>© 2023 CINEMAPLAY</p>
+                </div>
+            <div class="icons">
+                <h2>Get to us</h2>
+                <div class="social-icons">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-pinterest"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+<script src="cinemaplay.js"></script>
+
+</html>

@@ -1,0 +1,24 @@
+ .slider::-webkit-scrollbar{
+    display: none;
+}
+
+.slide::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 20;
+} 
+.slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.slide {
+    scroll-snap-align: start;
+    flex: 0 0 100%;
+    max-width: 100%;
+    scroll-behavior: smooth;
+}

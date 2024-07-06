@@ -1,14 +1,14 @@
-import React, { Children } from 'react'
+import React, { Children, Suspense, lazy } from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import { BrowserRouter, createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './pages/Home.jsx'
 import Request from './pages/Request.jsx'
 import App from './App.jsx'
-import MovieDetail from './pages/MovieDetail.jsx'
-import MoviesPage from './pages/MoviesPage.jsx'
-import TvShowsPage from './pages/TvShowsPage.jsx'
-import LandingPage from './pages/LandingPage.jsx'
+const MovieDetail = lazy(()=> import('./pages/MovieDetail.jsx'))  
+const MoviesPage  = lazy(()=> import('./pages/MoviesPage.jsx')) 
+const TvShowsPage = lazy(()=> import('./pages/TvShowsPage.jsx'))  
+const LandingPage = lazy(()=> import( './pages/LandingPage.jsx')) 
 
 
 const router = createBrowserRouter([
@@ -49,7 +49,11 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <Suspense fallback= { <div className="loader w-screen h-screen flex flex-col items-center justify-center">
+          <div className="text-white text-2xl mt-4">Loading...</div>
+        </div>}>
     <RouterProvider router={router} />
+    </Suspense>
     {/* <App /> */}
   </React.StrictMode>,
 )
